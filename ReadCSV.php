@@ -1,7 +1,5 @@
 <?php
 
-namespace App;
-
 class ReadCSV
 {
     private const CSV_LENGTH = 1000;
@@ -14,7 +12,7 @@ class ReadCSV
      * @param bool $assoc       Determines if the array is returned associative
      * @return array<array-key, string>
      */
-    public function read(string $csvPath, string $separator, int $header = 0, bool $assoc = true): array
+    public static function read(string $csvPath, string $separator, int $header = 0, bool $assoc = true): array
     {
         $handle = fopen($csvPath, 'rb');
 
