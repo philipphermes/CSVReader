@@ -1,7 +1,7 @@
 # Example:
 
 ### Parameters in this example:
-1. Reads [\_\_DIR\_\_ . '/files/test.csv'](https://github.com/philipphermes/CSVReader/blob/example/files/csv/test.csv)
+1. Reads [\_\_DIR\_\_ . '/files/test.csv'](https://github.com/philipphermes/CSVReader/blob/example/files/test.csv)
 2. Separator ";" (The separator used in the csv)
 3. Header: 0 (The location of the header)
 4. Assoc: true (Return as associative array)
