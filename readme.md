@@ -6,6 +6,10 @@
 3. Header: 0 (The location of the header)
 4. Assoc: true (Return as associative array)
 
+```php
+ $data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, true);
+```
+
 ### Output:
 ```
 array(2) {
