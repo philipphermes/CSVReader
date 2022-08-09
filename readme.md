@@ -10,9 +10,9 @@
 3. header
     * the location of the header
 4. assoc
-    * when true returns the array associative
+    * when ReadCSV::ASSOC returns the array associative
 
 ### [Example](https://github.com/philipphermes/CSVReader/tree/example)
 ```php
- $data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, true);
+ $data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, ReadCSV::ASSOC);
 ```
