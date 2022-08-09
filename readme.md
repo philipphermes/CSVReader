@@ -4,10 +4,10 @@
 1. Reads [\_\_DIR\_\_ . '/files/test.csv'](https://github.com/philipphermes/CSVReader/blob/example/files/test.csv)
 2. Separator ";" (The separator used in the csv)
 3. Header: 0 (The location of the header)
-4. Assoc: true (Return as associative array)
+4. Assoc: ReadCSV::ASSOC (Return as associative array)
 
 ```php
- $data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, true);
+ $data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, ReadCSV::ASSOC);
 ```
 
 ### Output:

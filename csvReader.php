@@ -4,6 +4,6 @@ require __DIR__ . "/vendor/autoload.php";
 
 use App\ReadCSV;
 
-$data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, true);
+$data = ReadCSV::read(__DIR__ . '/files/test.csv', ';', 0, ReadCSV::ASSOC);
 
 var_dump($data);
