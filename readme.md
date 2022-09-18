@@ -25,9 +25,8 @@
    * the separator used in the csv
    * required
 3. fields
-   * the location of the header
-4. assoc
-   * when ReadCSV::ASSOC returns the array associative
+   * the values wich will be added to the csv
+   * required
 
 #### Example
 ```php
