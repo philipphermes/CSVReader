@@ -56,4 +56,27 @@ class ReadCSV
 
         return $data;
     }
+
+    /**
+     * Reads the CSV and returns the data as array
+     * @param string $csvPath The Path of the CSV
+     * @param string $separator The separator which is used in the csv to separate the data
+     * @param array<array-key, array<int|string, string>> $fieldsList the values wich will be added to the csv
+     * @return void
+     */
+    public static function write(string $csvPath, string $separator, array $fieldsList): void
+    {
+        $handle = fopen($csvPath, 'a');
+
+        if ($handle === false) {
+            $message = sprintf('Opening csv: "%s" failed!', $csvPath);
+            throw new \RuntimeException($message);
+        }
+
+        foreach ($fieldsList as $fields) {
+            fputcsv($handle, $fields, $separator);
+        }
+
+        fclose($handle);
+    }
 }
