@@ -37,8 +37,8 @@
         'lastName' => 'Mueller'
     ],
     1 => [
-        'firstName' => 'Max',
-        'lastName' => 'Mustermann'
+        0 => 'Max',
+        1 => 'Mustermann'
     ]
  ];
  
